@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,47 +8,37 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="EvoTech Logo" />
+    <h1>EvoTech</h1>
     <nav>
-      <a href="#celulares">Celulares</a>
-      <a href="#tablets">Tablets</a>
-      <a href="#acessorios">Acessórios</a>
-      <a href="#relogios">Relógios</a>
+      <a href="#produtos">Produtos</a>
       <a href="#carrinho">Carrinho</a>
+      <a href="login.html">Login</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Bem-vindo à EvoTech</h1>
-    <p>Os melhores produtos das maiores marcas de tecnologia</p>
+  <section id="banner">
+    <div class="carousel">
+      <div class="slide active">Super ofertas em celulares!</div>
+      <div class="slide">Descontos em relógios inteligentes</div>
+      <div class="slide">Frete grátis em acessórios</div>
+    </div>
   </section>
 
   <main>
-    <section id="celulares">
-      <h2>Celulares</h2>
-      <div class="produtos" id="produtos-celulares"></div>
-    </section>
-
-    <section id="tablets">
-      <h2>Tablets</h2>
-      <div class="produtos" id="produtos-tablets"></div>
-    </section>
-
-    <section id="acessorios">
-      <h2>Acessórios</h2>
-      <div class="produtos" id="produtos-acessorios"></div>
-    </section>
-
-    <section id="relogios">
-      <h2>Relógios Inteligentes</h2>
-      <div class="produtos" id="produtos-relogios"></div>
+    <section id="produtos">
+      <h2>Produtos em Destaque</h2>
+      <div class="produtos" id="lista-produtos"></div>
     </section>
 
     <section id="carrinho">
       <h2>Carrinho</h2>
       <div id="itens-carrinho"></div>
       <p>Total: <span id="total">R$ 0,00</span></p>
-      <button onclick="finalizarCompra()">Finalizar Compra</button>
+      <button onclick="mostrarPagamento()">Finalizar Compra</button>
+      <div id="pagamento" style="display:none; margin-top:20px;">
+        <a href="https://pagseguro.uol.com.br" target="_blank" class="botao-pagamento">Pagar com PagSeguro</a>
+        <a href="https://www.mercadopago.com.br" target="_blank" class="botao-pagamento">Pagar com MercadoPago</a>
+      </div>
     </section>
   </main>
 

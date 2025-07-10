@@ -1,60 +1,14 @@
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: #f9f9f9;
-}
-header {
-  background-color: #000;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-.hero {
-  background-color: #ff5c1c;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-}
-.produtos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-.produto {
-  background: white;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 200px;
-  text-align: center;
-}
-.produto img {
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-}
-button {
-  background-color: #ff5c1c;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-footer {
-  background-color: #000;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; scroll-behavior: smooth; }
+header { background-color: #000; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; text-decoration: none; margin-left: 20px; }
+#banner { background-color: #222; color: white; text-align: center; padding: 40px 20px; }
+.carousel { position: relative; height: 60px; overflow: hidden; }
+.slide { display: none; font-size: 24px; animation: fade 1s ease-in-out; }
+.slide.active { display: block; }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+.produtos { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; justify-content: center; }
+.produto { background: white; padding: 15px; width: 200px; border: 1px solid #ddd; border-radius: 8px; text-align: center; transition: transform 0.3s ease; }
+.produto:hover { transform: scale(1.05); }
+.botao-pagamento { display: inline-block; padding: 10px 20px; background-color: orange; color: black; text-decoration: none; margin-right: 10px; border-radius: 5px; }
+footer { background-color: #000; color: white; text-align: center; padding: 20px; margin-top: 40px; }
